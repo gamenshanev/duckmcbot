@@ -27,7 +27,7 @@ module.exports.run = async (bot, message, arguments) => {
         .setFooter("ticket closed");
  
     // Vind kanaal voor de logs.
-    var logChannel = message.guild.channels.find("name", "logs");
+    var logChannel = message.guild.channels.find("name", "⚡other-logs");
     if (!logChannel) return message.channel.send("log channel not found, make a channel **logs** on.");
  
     logChannel.send(embedCloseTicket);
