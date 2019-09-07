@@ -35,7 +35,7 @@ module.exports.run = async (bot, message, arguments) => {
         .addField("Reden", reason)
         .addField("Antal warns", warns[user.id].warns);
 
-    var warnChannel = message.guild.channels.find(`name`, "»🔒bot-logs");
+    var warnChannel = message.guild.channels.find(`name`, "⚡other-logs");
     if(!warnChannel) return message.guild.send("Channel not found.");
 
     warnChannel.send(warnEmbed);
