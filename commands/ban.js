@@ -19,7 +19,7 @@ module.exports.run = async (bot, message, arguments) => {
         .addField("Geband door", message.author)
         .addField("Reden", reason);
 
-    var banChannel = message.guild.channels.find(`name`, "»🔒bot-logs");
+    var banChannel = message.guild.channels.find(`name`, "⚡other-logs");
     if(!banChannel) return message.guild.send("Channel not found.");
 
     message.guild.member(banUser).ban(reason);
