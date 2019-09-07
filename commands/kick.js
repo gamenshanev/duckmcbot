@@ -20,7 +20,7 @@ module.exports.run = async (bot, message, arguments) => {
         .addField("Gekickt door", message.author)
         .addField("Reden", reason);
 
-    var kickChannel = message.guild.channels.find(`name`, "»🔒bot-logs");
+    var kickChannel = message.guild.channels.find(`name`, "⚡other-logs");
     if(!kickChannel) return message.guild.send("Channel not found.");
 
     message.guild.member(kickUser).kick(reason);
