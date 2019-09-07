@@ -8,7 +8,7 @@ module.exports.run = async (bot, message, arguments) => {
 
     if(!arguments[0]) return message.channel.send(closeEmbed);
 
-    var CategoryName = message.guild.channels.find("id", "619053958056509441");
+    var CategoryName = "619053958056509441";
  
     // Als bericht in ticket kanaal is dan verwijder kanaal ander zend bericht
     if (message.channel.parentID == categoryName) {
