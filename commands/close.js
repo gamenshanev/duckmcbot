@@ -1,17 +1,17 @@
 const discord = require("discord.js");
 
 module.exports.run = async (bot, message, arguments) => {
+    const categoryId = "619053958056509441";
 
+    
     var closeEmbed = new discord.RichEmbed()
         .setTitle("Close a ticket")
         .setFooter("Ticket closed")
 
     if(!arguments[0]) return message.channel.send(closeEmbed);
-
-    const CategoryName = "619053958056509441";
  
     // Als bericht in ticket kanaal is dan verwijder kanaal ander zend bericht
-    if (message.channel.parentID == categoryName) {
+    if (message.channel.parentID == categoryId) {
  
         message.channel.delete();
  
