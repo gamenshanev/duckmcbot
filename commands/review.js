@@ -8,7 +8,7 @@ module.exports.run = async (bot, message, args) => {
 
     const bericht = args.splice(1, args.length).join(' ') || '**Geen bericht meegegeven!**';
 
-    var reviewChannel = message.guild.channels.find("name", "»⭐review");
+    var reviewChannel = message.guild.channels.find("name", "⭐review");
     if (!reviewChannel) return message.channel.send("reviews kanaal niet gevonden!");
 
     var sterren = "";
